@@ -27,6 +27,10 @@ Develop a RESTful API using Express.js framework backed by SQLite and Sequelize 
 * **🛡️ JWT Authentication and Authorization (Bonus):** Incorporated JSON Web Tokens (JWT) for user authentication and authorization. This secure approach ensures that only authorized users can access protected routes and resources.
 
 
+## How to Setup?
+* ### git clone https://github.com/saksham9312/bot9ai-task.git
+* ### npm install dependencies
+* ### npm start
     
 ## API Reference
 ### Users
