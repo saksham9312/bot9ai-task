@@ -60,7 +60,7 @@ Send this as Headers
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `authorization` | `string` | Bearer <space> <TOKEN>|
+| `authorization` | `string` | Bearer TOKEN|
 
 * #### Get User by Id (protected route): 
   Fetches a single User based on id
@@ -72,7 +72,7 @@ Send this as Headers
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `authorization` | `string` | Bearer <space> <TOKEN>|
+| `authorization` | `string` | Bearer TOKEN|
 
 * #### Update User by Id (protected route): 
   Updates the details of user with particular Id.
@@ -91,7 +91,7 @@ Send this as Headers
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `authorization` | `string` | Bearer <space> <TOKEN>|
+| `authorization` | `string` | Bearer TOKEN|
 
 * #### Delete User by Id (protected route): 
   Deletes the user with particular Id.
@@ -102,7 +102,7 @@ Send this as Headers
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `authorization` | `string` | Bearer <space> <TOKEN>|
+| `authorization` | `string` | Bearer TOKEN|
 
 ### Chatbot
 * #### Create Chatbot (protected route):
@@ -120,7 +120,7 @@ Send this as Headers
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `authorization` | `string` | Bearer <space> <TOKEN>|
+| `authorization` | `string` | Bearer TOKEN|
 
 
 * #### Get All Chatbots for userId (protected route): 
@@ -139,7 +139,7 @@ Send this as Headers
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `authorization` | `string` | Bearer <space> <TOKEN>|
+| `authorization` | `string` | Bearer TOKEN|
 
 * #### Get Chatbot by chatbotId: 
   Fetches a single chatbot based on chatbotId
