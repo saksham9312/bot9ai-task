@@ -60,7 +60,7 @@ Send this as Headers
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `authorization` | `string` | Bearer <space> <JWT TOKEN>|
+| `authorization` | `string` | Bearer <space> <TOKEN>|
 
 * #### Get User by Id (protected route): 
   Fetches a single User based on id
@@ -72,7 +72,7 @@ Send this as Headers
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `authorization` | `string` | Bearer <space> <JWT TOKEN>|
+| `authorization` | `string` | Bearer <space> <TOKEN>|
 
 * #### Update User by Id (protected route): 
   Updates the details of user with particular Id.
@@ -91,7 +91,7 @@ Send this as Headers
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `authorization` | `string` | Bearer <space> <JWT TOKEN>|
+| `authorization` | `string` | Bearer <space> <TOKEN>|
 
 * #### Delete User by Id (protected route): 
   Deletes the user with particular Id.
@@ -102,7 +102,7 @@ Send this as Headers
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `authorization` | `string` | Bearer <space> <JWT TOKEN>|
+| `authorization` | `string` | Bearer <space> <TOKEN>|
 
 ### Chatbot
 * #### Create Chatbot (protected route):
@@ -120,20 +120,26 @@ Send this as Headers
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `authorization` | `string` | Bearer <space> <JWT TOKEN>|
+| `authorization` | `string` | Bearer <space> <TOKEN>|
 
 
 * #### Get All Chatbots for userId (protected route): 
   Fetches All Chatbots for particular user and displays them in pagination format.
 ```http
-    GET http://localhost:5000/users/:userId/chatbots
+    GET http://localhost:5000/users/:userId/chatbots?page=1&limit=2
 ```
+Send this as Query
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `page` | `integer` | current page|
+| `limit` | `integer` | limit of entries per page|
 
 Send this as Headers
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `authorization` | `string` | Bearer <space> <JWT TOKEN>|
+| `authorization` | `string` | Bearer <space> <TOKEN>|
 
 * #### Get Chatbot by chatbotId: 
   Fetches a single chatbot based on chatbotId
@@ -175,8 +181,14 @@ Send this as Body
 * #### Get All conversations for chatbotId: 
   Fetches All conversations for particular chatbot and displays them in pagination format.
 ```http
-    GET http://localhost:5000/chatbots/:chatbotId/conversations
+    GET http://localhost:5000/chatbots/:chatbotId/conversations?page=1&limit=2
 ```
+Send this as Query
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `page` | `integer` | current page|
+| `limit` | `integer` | limit of entries per page|
 
 * #### Get Conversation by conversationId: 
   Fetches a single conversation based on conversationId
@@ -220,8 +232,14 @@ Send this as Body
 * #### Get All EndUsers: 
   Fetches All EndUsers and displays them in pagination format.
 ```http
-    GET http://localhost:5000/endusers
+    GET http://localhost:5000/endusers?page=1&limit=2
 ```
+Send this as Query
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `page` | `integer` | current page|
+| `limit` | `integer` | limit of entries per page|
 
 * #### Get EndUser by endUserId: 
   Fetches a single end-user based on endUserId
